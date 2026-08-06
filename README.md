@@ -4,6 +4,10 @@ A college mini/major project: a web app that helps a patient track prescriptions
 get reminded to take medicine on time, and chat with an AI assistant ("Aura")
 about drug information — powered by the **Groq LLM API**.
 
+
+![Uploading Screenshot (27).png…]()
+
+
 ---
 
 ## 1. Tech Stack (kept intentionally simple)
