@@ -38,12 +38,13 @@ app.secret_key = "prescriptai-college-project-secret-key-change-me"
 CORS(
     app,
     supports_credentials=True,
-    origins=[
-        "http://127.0.0.1:8080",
-        "http://localhost:8080",
-        "http://127.0.0.1:5500",
-        "http://localhost:5500",
-    ],
+   origins=[
+    "https://prescript-p4abg71vp-priyadharshini5.vercel.app",
+    "http://127.0.0.1:8080",
+    "http://localhost:8080",
+    "http://127.0.0.1:5500",
+    "http://localhost:5500",
+],
 )
 
 app.config.update(
