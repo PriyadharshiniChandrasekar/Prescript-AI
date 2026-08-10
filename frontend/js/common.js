@@ -1,6 +1,6 @@
 /* common.js - shared helpers used by every page */
 
-const API_BASE = "http://127.0.0.1:5000/api";
+const API_BASE = "https://prescriptai-backend.onrender.com";
 
 /** Generic fetch wrapper that always sends session cookies */
 async function apiRequest(path, method = "GET", body = null) {
