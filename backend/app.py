@@ -12,7 +12,7 @@ Server starts at http://127.0.0.1:5000
 Open frontend/pages/login.html in your browser (or serve the frontend
 folder with any static server) to use the app.
 """
-
+import os
 from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
