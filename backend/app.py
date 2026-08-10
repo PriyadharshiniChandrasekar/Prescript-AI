@@ -38,18 +38,21 @@ app.secret_key = "prescriptai-college-project-secret-key-change-me"
 CORS(
     app,
     supports_credentials=True,
-   origins=[
-    "https://prescript-ai.vercel.app",
-    "http://127.0.0.1:8080",
-    "http://localhost:8080",
-    "http://127.0.0.1:5500",
-    "http://localhost:5500",
-],
+    origins=[
+        "https://prescript-ai.vercel.app",
+        "http://127.0.0.1:8080",
+        "http://localhost:8080",
+        "http://127.0.0.1:5500",
+        "http://localhost:5500",
+    ],
 )
 
+# Cross-site cookies (frontend on Vercel, backend on Render) need
+# SameSite=None + Secure=True so the browser will actually store and send
+# the session cookie back on every request.
 app.config.update(
-    SESSION_COOKIE_SAMESITE="Lax",
-    SESSION_COOKIE_SECURE=False,
+    SESSION_COOKIE_SAMESITE="None",
+    SESSION_COOKIE_SECURE=True,
 )
 
 init_db()
@@ -161,7 +164,6 @@ def add_prescription():
     if not medicine_name or not dosage or not frequency or not times:
         return jsonify({"success": False, "message": "Medicine name, dosage, frequency and at least one time are required."}), 400
 
-    # AI prescription analysis (Groq) - prompt engineering in ai_engine.py
     ai_summary = analyze_prescription(medicine_name, dosage, frequency)
 
     conn = get_connection()
@@ -177,7 +179,6 @@ def add_prescription():
     conn.commit()
     prescription_id = cur.lastrowid
 
-    # seed today's intake log rows so the dashboard checklist has entries
     for t in times:
         cur.execute("""
             INSERT INTO intake_logs (prescription_id, user_id, log_date, scheduled_time, status, logged_at)
@@ -222,8 +223,6 @@ def delete_prescription(pid):
 # DASHBOARD / INTAKE / ALERTS
 # ----------------------------------------------------------------------
 def _ensure_today_logs(user_id):
-    """Make sure every active prescription has a log row for each of its
-    scheduled times today (covers days after the prescription was created)."""
     conn = get_connection()
     cur = conn.cursor()
     today = str(date.today())
@@ -256,7 +255,6 @@ def dashboard():
     conn = get_connection()
     cur = conn.cursor()
 
-    # today's checklist (joined with prescription info)
     cur.execute("""
         SELECT il.id as log_id, il.scheduled_time, il.status,
                p.id as prescription_id, p.medicine_name, p.dosage
@@ -270,16 +268,13 @@ def dashboard():
     taken_count = sum(1 for c in checklist if c["status"] == "taken")
     total_count = len(checklist)
 
-    # missed = pending items whose scheduled time has already passed
     missed = [c for c in checklist if c["status"] == "pending" and c["scheduled_time"] < now_time]
     for m in missed:
         cur.execute("UPDATE intake_logs SET status = 'missed' WHERE id = ?", (m["log_id"],))
     conn.commit()
 
-    # recompute missed count after update
     missed_count = sum(1 for c in checklist if c["status"] == "missed") + len(missed)
 
-    # next upcoming dose (pending, soonest time >= now)
     upcoming = None
     for c in sorted(checklist, key=lambda x: x["scheduled_time"]):
         if c["status"] == "pending" and c["scheduled_time"] >= now_time:
@@ -306,7 +301,7 @@ def dashboard():
 @login_required
 def update_intake(log_id):
     data = request.get_json(force=True)
-    status = data.get("status")  # "taken" or "skipped"
+    status = data.get("status")
     if status not in ("taken", "skipped"):
         return jsonify({"success": False, "message": "Invalid status."}), 400
 
@@ -382,6 +377,7 @@ def chat_history_route():
     rows = [dict(r) for r in cur.fetchall()]
     conn.close()
     return jsonify({"success": True, "history": rows})
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
