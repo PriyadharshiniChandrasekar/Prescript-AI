@@ -6,8 +6,6 @@
 A full-stack web app that helps patients track prescriptions, get reminded to take medicine on time and chat with an AI assistant ("Aura") about drug information — powered by the **Groq LLM API**.
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-16c9a8?style=for-the-badge)](https://prescript-ai.vercel.app/pages/login.html)
-[![Backend](https://img.shields.io/badge/Backend_API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://prescriptai-backend.onrender.com)
-[![Frontend](https://img.shields.io/badge/Frontend-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://prescript-ai.vercel.app)
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=flat-square&logo=flask&logoColor=white)
