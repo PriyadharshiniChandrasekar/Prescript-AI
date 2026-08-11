@@ -36,7 +36,7 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 
 #### 📜 History Log
 <img width="1920" height="963" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/cabe5a08-c033-49c9-95e8-6dfce7eb54bc" />
-
+<br>
 </div>
 
 ---
