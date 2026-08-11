@@ -129,18 +129,13 @@ Then visit **http://127.0.0.1:8080/pages/login.html**
 
 ---
 
-## 6. Running with Docker
+## 6.  🚀 Live Demo
 
-```bash
-export GROQ_API_KEY="your_key_here"
-docker compose up --build
-```
-- Backend API → `http://localhost:5000`
-- Frontend    → `http://localhost:8080/pages/login.html`
+- **Frontend:** https://prescript-ai.vercel.app/pages/login.html
+- **Backend API:** https://prescriptai-backend.onrender.com
 
-This also satisfies the "deploy in Docker" requirement — the same
-`docker-compose.yml` can be pushed to an AWS EC2 instance or an Azure VM and
-run with the same command.
+> Note: Backend is hosted on Render's free tier, so the first request 
+> after inactivity may take 30-50 seconds to wake up (cold start).
 
 ---
 
