@@ -40,7 +40,7 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 </div>
 
 ---
-<br>
+
 
 ## 🚀 Live Demo
 
