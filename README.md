@@ -7,7 +7,6 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-16c9a8?style=for-the-badge)](https://prescript-ai.vercel.app/pages/login.html)
 
-<br><br>
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=flat-square&logo=flask&logoColor=white)
@@ -17,22 +16,23 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
+<br><br>
 
 #### 📊 Dashboard
 <img width="1920" height="978" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/d3c6a991-2449-478f-a343-1b773d59b5dd" />
+<br>
 
-
-#### 💬 Aura Chat
+####  💊 Add Prescription
 <img width="1920" height="969" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/cfa9375b-7530-47f3-9b2f-37adb5cb85e7" />
-
-
-#### 💊 Add Prescription
-<img width="1920" height="978" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/66b6291b-c63c-4e05-992b-c8be81c3806d" />
-
+<br>
 
 #### 🤖 AI Analysis
-<img width="1920" height="967" alt="Screenshot (72)" src="https://github.com/user-attachments/assets/64633f5c-d020-4673-b3c4-d1ba5ae58d07" />
+<img width="1920" height="978" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/66b6291b-c63c-4e05-992b-c8be81c3806d" />
+<br>
 
+####  💬 Aura Chat
+<img width="1920" height="967" alt="Screenshot (72)" src="https://github.com/user-attachments/assets/64633f5c-d020-4673-b3c4-d1ba5ae58d07" />
+<br>
 
 #### 📜 History Log
 <img width="1920" height="963" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/cabe5a08-c033-49c9-95e8-6dfce7eb54bc" />
@@ -40,6 +40,7 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 </div>
 
 ---
+<br>
 
 ## 🚀 Live Demo
 
