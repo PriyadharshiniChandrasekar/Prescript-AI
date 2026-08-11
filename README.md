@@ -16,7 +16,22 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-<img width="1920" height="1080" alt="PrescriptAI Dashboard" src="https://github.com/user-attachments/assets/66c581c0-410e-48f1-ab38-63ee373ece0c" />
+<img width="1920" height="978" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/d3c6a991-2449-478f-a343-1b773d59b5dd" />
+
+<img width="1920" height="969" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/cfa9375b-7530-47f3-9b2f-37adb5cb85e7" />
+
+
+<img width="1920" height="978" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/66b6291b-c63c-4e05-992b-c8be81c3806d" />
+
+
+<img width="1920" height="967" alt="Screenshot (72)" src="https://github.com/user-attachments/assets/64633f5c-d020-4673-b3c4-d1ba5ae58d07" />
+
+
+<img width="1920" height="963" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/cabe5a08-c033-49c9-95e8-6dfce7eb54bc" />
+
+
+
+
 
 </div>
 
