@@ -16,6 +16,9 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
+|---|---|
+
+
 #### 📊 Dashboard
 <img width="1920" height="978" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/d3c6a991-2449-478f-a343-1b773d59b5dd" />
 
