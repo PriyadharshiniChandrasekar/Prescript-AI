@@ -378,6 +378,17 @@ def chat_history_route():
     conn.close()
     return jsonify({"success": True, "history": rows})
 
+@app.route("/api/admin/reset-db-x7k9", methods=["GET"])
+def reset_database():
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM users")
+    cur.execute("DELETE FROM prescriptions")
+    cur.execute("DELETE FROM intake_logs")
+    cur.execute("DELETE FROM chat_history")
+    conn.commit()
+    conn.close()
+    return jsonify({"success": True, "message": "All demo data cleared!"})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
