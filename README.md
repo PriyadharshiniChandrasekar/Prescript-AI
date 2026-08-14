@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💊 PrescriptAI
+# 💊 PrescriptA
 ### AI-Powered Prescription Reminder System
 
 A full-stack web app that helps patients track prescriptions, get reminded to take medicine on time and chat with an AI assistant ("Aura") about drug information — powered by the **Groq LLM API**.
