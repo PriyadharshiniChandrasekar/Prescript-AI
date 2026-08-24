@@ -68,7 +68,7 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 
 ## 🛠️ Tech Stack
 
-Kept intentionally simple and explainable — no React /Spring/MongoDB — while still covering every required feature (auth, dashboard, prescription analysis, AI, alerts, database).
+Kept intentionally simple and explainable — no React / Spring/MongoDB — while still covering every required feature (auth, dashboard, prescription analysis, AI, alerts, database).
 
 | Layer | Technology |
 |---|---|
