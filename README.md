@@ -185,7 +185,7 @@ Then visit **http://127.0.0.1:8080/pages/login.html**
 
 <div align="center">
 
-💊 Thank you for checking out PrescriptAI — feedback and contributions are welcome! 🙌
+💊 Thank you for checking out PrescriptAI — feedback and contributions are welcome...! 🙌
 
 **✨ Priyadharshini Chandrasekar ✨**
 
