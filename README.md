@@ -49,7 +49,7 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 | 🌐 **Frontend** | [prescript-ai.vercel.app](https://prescript-ai.vercel.app/pages/login.html) |
 | ⚙️ **Backend API** | [prescriptai-backend.onrender.com](https://prescriptai-backend.onrender.com) |
 
-> **Note:** The backend runs on Render's free tier, so it may "sleep" after 15 minutes of inactivity. The first request can take **30–50 seconds** to wake up — this is expected free-tier cold-start behaviour, not a bug.
+> **Note :** The backend runs on Render's free tier, so it may "sleep" after 15 minutes of inactivity. The first request can take **30–50 seconds** to wake up — this is expected free-tier cold-start behaviour, not a bug.
 
 ---
 
