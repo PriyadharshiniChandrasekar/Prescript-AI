@@ -115,7 +115,7 @@ prescriptai/
 
 ---
 
-## 🎯 Features Mapped to Requirements
+## 🎯 Features Mapped to Requirements...
 
 - **Authentication** → `/api/register`, `/api/login`, `/api/logout`, `/api/me` (passwords hashed with `werkzeug.security`, session-cookie based)
 - **Dashboard** → `dashboard.html` + `/api/dashboard`: today's intake %, upcoming dose, missed doses, active protocol count, and a live checklist (Taken / Skip buttons)
