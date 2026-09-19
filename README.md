@@ -154,7 +154,7 @@ python app.py
 ```
 The API runs at `http://127.0.0.1:5000`. The SQLite file `prescriptai.db` is created automatically on first run.
 
-### Frontend
+### Frontend...
 ```bash
 cd frontend
 python -m http.server 8080
