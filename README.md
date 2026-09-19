@@ -163,7 +163,7 @@ Then visit **http://127.0.0.1:8080/pages/login.html**
 
 ---
 
-## 🎬 Demo Flow (for viva)
+## 🎬 Demo Flow (for viva) :
 
 1. **Register** a new account → redirected straight to Dashboard
 2. **Add a prescription** (e.g. "Lisinopril", 10mg, twice daily, times 08:00 & 20:00) → Aura instantly returns an AI analysis card
