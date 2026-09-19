@@ -126,7 +126,7 @@ prescriptai/
 
 ---
 
-## 🧠 Prompt Engineering Principles Used (`backend/ai_engine.py`)
+## 🧠 Prompt Engineering Principles Used (`backend/ai_engine.py`)...
 
 1. **Role / persona definition** — a system prompt defines "Aura" and her tone
 2. **Explicit constraints / guardrails** — never diagnose, always recommend a doctor for serious issues, no invented dosages
