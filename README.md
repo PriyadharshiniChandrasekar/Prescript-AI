@@ -174,7 +174,7 @@ Then visit **http://127.0.0.1:8080/pages/login.html**
 
 ---
 
-## 🔮 Possible Extensions
+## 🔮 Possible Extensions :
 
 - Add email/SMS reminders (e.g. via Twilio) for true push alerts
 - Add drug-drug interaction checks across all active prescriptions
