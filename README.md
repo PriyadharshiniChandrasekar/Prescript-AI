@@ -53,7 +53,7 @@ A full-stack web app that helps patients track prescriptions, get reminded to ta
 
 ---
 
-## ✨ Features
+## ✨ Features : 
 
 | Feature | Description |
 |---|---|
